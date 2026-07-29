@@ -28,8 +28,8 @@ app.use(
   })
 );
 
-// Ensure preflight requests are handled
-app.options('*', cors());
+// Note: explicit app.options('*', cors()) can break on some router/path-to-regexp versions;
+// the global CORS middleware above handles preflight requests, so no explicit options route is needed.
 app.use(express.json());
 
 // Initialize Gemini API
