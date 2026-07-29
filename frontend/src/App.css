@@ -1,0 +1,6 @@
+/* Main container styles will go here or be replaced by CSS modules */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

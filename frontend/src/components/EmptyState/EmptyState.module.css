@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  opacity: 0.8;
+}
+
+.iconWrapper {
+  background-color: #E0E7FF;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  color: var(--primary-color);
+}
+
+.message {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}

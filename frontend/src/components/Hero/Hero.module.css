@@ -1,0 +1,17 @@
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}

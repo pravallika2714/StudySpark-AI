@@ -1,0 +1,37 @@
+:root {
+  --bg-color: #FDFBF7;
+  --primary-color: #8B5A2B;
+  --primary-hover: #5C3A21;
+  --secondary-color: #D2B48C;
+  --accent-color: #CD853F;
+  --card-bg: #FFFFFF;
+  --text-primary: #3E2723;
+  --text-secondary: #795548;
+  --error-color: #D84315;
+  --success-color: #2E7D32;
+  
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --radius-card: 18px;
+  --radius-btn: 12px;
+  
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  --transition-smooth: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --bg-color: #271C19;
+  --primary-color: #E2C2A4;
+  --primary-hover: #F5E6D3;
+  --secondary-color: #8D6E63;
+  --accent-color: #D7CCC8;
+  --card-bg: #3E2A23;
+  --text-primary: #FDF8F5;
+  --text-secondary: #BCAAA4;
+  
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.6);
+}

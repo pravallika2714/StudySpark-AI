@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-bg);
+  padding: 4rem;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.iconWrapper {
+  background-color: #E0E7FF;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  color: var(--primary-color);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.scoreCircle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.scoreText {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.totalText {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.percentage {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.retryBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.retryBtn:hover {
+  background-color: #00A97F;
+}
+
+.restartBtn {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border: 2px solid #E5E7EB;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-btn);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.restartBtn:hover {
+  background-color: #F3F4F6;
+  border-color: #D1D5DB;
+}
+
+.btnIcon {
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--card-bg);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  max-width: 600px;
+  margin: 2rem auto;
+  border-top: 4px solid var(--error-color);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  color: var(--error-color);
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.retryButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--error-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-btn);
+  font-weight: 500;
+}
+
+.retryButton:hover {
+  background-color: #DC2626;
+}
+
+.retryIcon {
+  width: 18px;
+  height: 18px;
+}
