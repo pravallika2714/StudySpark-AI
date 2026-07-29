@@ -1,0 +1,66 @@
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Env files
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Build outputs
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# Logs
+logs/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+coverage/
+.cache/
+coverage/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Local npm
+.npm
+
+# Test outputs
+test-results/
+
+# Temporary
+tmp/
+
+# Lockfiles for pnpm
+.pnpm-debug.log
+
+# Local dev database files
+*.sqlite
+
+# Ignore secrets (if accidentally generated)
+secrets.json
+
+# Ignore env files in backend specifically
+backend/.env
+
+# Ignore frontend build
+frontend/dist/
