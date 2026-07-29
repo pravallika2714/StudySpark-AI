@@ -1,7 +1,15 @@
 import axios from 'axios';
 
+// Read backend URL from Vite env; fall back to localhost for dev
+const BACKEND_URL = (import.meta && import.meta.env && import.meta.env.VITE_BACKEND_URL)
+  ? String(import.meta.env.VITE_BACKEND_URL)
+  : 'http://localhost:5000';
+
+// Ensure no trailing slash and append /api
+const normalizedBase = `${BACKEND_URL.replace(/\/$/, '')}/api`;
+
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Hardcoded for dev, normally from env
+  baseURL: normalizedBase,
   timeout: 60000, // 60 seconds timeout since LLMs can take time
 });
 
