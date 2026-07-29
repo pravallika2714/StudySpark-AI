@@ -6,7 +6,13 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+// Configure CORS: allow all origins by default, but prefer restricting via FRONTEND_URL in production
+const FRONTEND_URL = process.env.FRONTEND_URL;
+if (FRONTEND_URL && FRONTEND_URL.trim() !== '') {
+  app.use(cors({ origin: FRONTEND_URL }));
+} else {
+  app.use(cors());
+}
 app.use(express.json());
 
 // Initialize Gemini API
@@ -113,4 +119,9 @@ app.post('/api/generate', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+});
+
+// Health check route for Render / uptime monitoring
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', env: process.env.NODE_ENV || 'development' });
 });
